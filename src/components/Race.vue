@@ -1,15 +1,17 @@
 <template>
   <div>
-    <h2>{{ raceModel.name }}</h2>
+    <h2>{{ name }}</h2>
+    <p>{{ startInstant }}</p>
     <ul>
-      <li v-for="pony of raceModel.ponies" :key="pony.id">{{ pony.name }}</li>
+      <li v-for="pony of ponies" :key="pony.id">{{ pony.name }}</li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
 import { RaceModel } from '@/models/RaceModel';
-import { defineComponent, PropType } from 'vue';
+import { computed, defineComponent, PropType, toRefs } from 'vue';
+import fromNow from '@/utils/FromNow';
 
 export default defineComponent({
   name: 'Race',
@@ -19,6 +21,12 @@ export default defineComponent({
       type: Object as PropType<RaceModel>,
       required: true
     }
+  },
+
+  setup(props) {
+    const startInstant = computed(() => fromNow(props.raceModel.startInstant));
+
+    return { ...toRefs(props.raceModel), startInstant };
   }
 });
 </script>
