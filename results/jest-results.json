@@ -1,14 +1,14 @@
 {
   "numFailedTestSuites": 0,
   "numFailedTests": 0,
-  "numPassedTestSuites": 4,
-  "numPassedTests": 6,
+  "numPassedTestSuites": 5,
+  "numPassedTests": 8,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 4,
-  "numTotalTests": 6,
+  "numTotalTestSuites": 5,
+  "numTotalTests": 8,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1613333799087,
+  "startTime": 1613350847947,
   "success": false,
   "testResults": [
     {
@@ -36,45 +36,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613333979712,
-        "start": 1613333857290
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\utils\\FromNow.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "FromNow"
-          ],
-          "duration": 43,
-          "failureMessages": [],
-          "fullName": "FromNow should transform a date",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should transform a date"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1613333979884,
-        "start": 1613333857289
+        "end": 1613350860687,
+        "start": 1613350852523
       },
       "snapshot": {
         "added": 0,
@@ -91,7 +54,7 @@
           "ancestorTitles": [
             "Race.vue"
           ],
-          "duration": 218,
+          "duration": 136,
           "failureMessages": [],
           "fullName": "Race.vue should display a race name and its ponies",
           "location": null,
@@ -110,8 +73,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613333980148,
-        "start": 1613333857285
+        "end": 1613350860856,
+        "start": 1613350852479
       },
       "snapshot": {
         "added": 0,
@@ -128,7 +91,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 325,
+          "duration": 175,
           "failureMessages": [],
           "fullName": "App.vue renders a title",
           "location": null,
@@ -140,7 +103,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 73,
+          "duration": 78,
           "failureMessages": [],
           "fullName": "App.vue renders the navbar",
           "location": null,
@@ -152,7 +115,7 @@
           "ancestorTitles": [
             "App.vue"
           ],
-          "duration": 69,
+          "duration": 66,
           "failureMessages": [],
           "fullName": "App.vue renders the races list",
           "location": null,
@@ -171,8 +134,45 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613334006845,
-        "start": 1613333981014
+        "end": 1613350862295,
+        "start": 1613350860828
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\utils\\FromNow.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "FromNow"
+          ],
+          "duration": 4,
+          "failureMessages": [],
+          "fullName": "FromNow should transform a date",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should transform a date"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1613350862714,
+        "start": 1613350860998
       },
       "snapshot": {
         "added": 0,
@@ -189,7 +189,7 @@
           "ancestorTitles": [
             "Races.vue"
           ],
-          "duration": 54,
+          "duration": 171,
           "failureMessages": [],
           "fullName": "Races.vue should display every race name in a title",
           "location": null,
@@ -200,10 +200,197 @@
       ],
       "skipped": false,
       "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1613350866685,
+        "start": 1613350852490
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\components\\Pony.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Pony.vue"
+          ],
+          "duration": 63,
+          "failureMessages": [],
+          "fullName": "Pony.vue should display an image and a legend",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should display an image and a legend"
+        },
+        {
+          "ancestorTitles": [
+            "Pony.vue"
+          ],
+          "duration": 9,
+          "failureMessages": [],
+          "fullName": "Pony.vue should emit an event on click",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should emit an event on click"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
     }
   ],
   "wasInterrupted": false,
   "coverageMap": {
+    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Race.vue": {
+      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Race.vue",
+      "statementMap": {
+        "0": {
+          "start": {
+            "line": 15,
+            "column": 0
+          },
+          "end": {
+            "line": 15,
+            "column": null
+          }
+        },
+        "1": {
+          "start": {
+            "line": 16,
+            "column": 0
+          },
+          "end": {
+            "line": 16,
+            "column": null
+          }
+        },
+        "2": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": null
+          }
+        },
+        "3": {
+          "start": {
+            "line": 19,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": 15
+          }
+        },
+        "4": {
+          "start": {
+            "line": 33,
+            "column": 25
+          },
+          "end": {
+            "line": 33,
+            "column": 34
+          }
+        },
+        "5": {
+          "start": {
+            "line": 33,
+            "column": 40
+          },
+          "end": {
+            "line": 33,
+            "column": 48
+          }
+        },
+        "6": {
+          "start": {
+            "line": 35,
+            "column": 4
+          },
+          "end": {
+            "line": 35,
+            "column": 16
+          }
+        }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": {
+            "start": {
+              "line": 32,
+              "column": 7
+            },
+            "end": {
+              "line": 32,
+              "column": 8
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 32,
+              "column": 13
+            },
+            "end": {
+              "line": 36,
+              "column": null
+            }
+          }
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": {
+            "start": {
+              "line": 33,
+              "column": 34
+            },
+            "end": {
+              "line": 33,
+              "column": 40
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 34
+            },
+            "end": {
+              "line": 33,
+              "column": null
+            }
+          }
+        }
+      },
+      "branchMap": {},
+      "s": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 9,
+        "5": 9,
+        "6": 9
+      },
+      "f": {
+        "0": 9,
+        "1": 9
+      },
+      "b": {}
+    },
     "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\utils\\FromNow.ts": {
       "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\utils\\FromNow.ts",
       "statementMap": {
@@ -285,66 +472,76 @@
       },
       "b": {}
     },
-    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Race.vue": {
-      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Race.vue",
+    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Pony.vue": {
+      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Pony.vue",
       "statementMap": {
         "0": {
           "start": {
-            "line": 13,
+            "line": 10,
             "column": 0
           },
           "end": {
-            "line": 13,
+            "line": 10,
             "column": null
           }
         },
         "1": {
           "start": {
-            "line": 14,
+            "line": 12,
             "column": 0
           },
           "end": {
-            "line": 14,
-            "column": null
+            "line": 12,
+            "column": 15
           }
         },
         "2": {
           "start": {
-            "line": 16,
-            "column": 0
+            "line": 24,
+            "column": 21
           },
           "end": {
-            "line": 16,
-            "column": 15
+            "line": 24,
+            "column": 23
           }
         },
         "3": {
           "start": {
-            "line": 27,
+            "line": 25,
             "column": 25
           },
           "end": {
-            "line": 27,
+            "line": 25,
             "column": 34
           }
         },
         "4": {
           "start": {
-            "line": 27,
+            "line": 25,
             "column": 40
           },
           "end": {
-            "line": 27,
-            "column": 48
+            "line": 25,
+            "column": 56
           }
         },
         "5": {
           "start": {
-            "line": 29,
+            "line": 28,
+            "column": 6
+          },
+          "end": {
+            "line": 28,
+            "column": 10
+          }
+        },
+        "6": {
+          "start": {
+            "line": 31,
             "column": 4
           },
           "end": {
-            "line": 29,
+            "line": 31,
             "column": 16
           }
         }
@@ -354,21 +551,21 @@
           "name": "(anonymous_0)",
           "decl": {
             "start": {
-              "line": 26,
+              "line": 24,
               "column": 7
             },
             "end": {
-              "line": 26,
+              "line": 24,
               "column": 8
             }
           },
           "loc": {
             "start": {
-              "line": 26,
-              "column": 13
+              "line": 24,
+              "column": 23
             },
             "end": {
-              "line": 30,
+              "line": 32,
               "column": null
             }
           }
@@ -377,21 +574,44 @@
           "name": "(anonymous_1)",
           "decl": {
             "start": {
-              "line": 27,
+              "line": 25,
               "column": 34
             },
             "end": {
-              "line": 27,
+              "line": 25,
               "column": 40
             }
           },
           "loc": {
             "start": {
-              "line": 27,
+              "line": 25,
               "column": 34
             },
             "end": {
+              "line": 25,
+              "column": null
+            }
+          }
+        },
+        "2": {
+          "name": "clicked",
+          "decl": {
+            "start": {
               "line": 27,
+              "column": 13
+            },
+            "end": {
+              "line": 27,
+              "column": 20
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 20
+            },
+            "end": {
+              "line": 29,
               "column": null
             }
           }
@@ -399,16 +619,18 @@
       },
       "branchMap": {},
       "s": {
-        "0": 3,
-        "1": 3,
-        "2": 3,
-        "3": 9,
-        "4": 9,
-        "5": 9
+        "0": 4,
+        "1": 4,
+        "2": 47,
+        "3": 47,
+        "4": 47,
+        "5": 1,
+        "6": 47
       },
       "f": {
-        "0": 9,
-        "1": 9
+        "0": 47,
+        "1": 47,
+        "2": 1
       },
       "b": {}
     },
