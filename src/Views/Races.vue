@@ -2,6 +2,10 @@
   <div v-for="race in races" :key="race.id">
     <Race :raceModel="race" />
   </div>
+  <div v-if="errorMeesage" class="alert alert-danger">
+    An error occurred while loading.
+    <button @click="errorToggler()" type="button" class="close" aria-label="Close"><span aria-hidden="true">&#215;</span></button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -15,15 +19,25 @@ export default defineComponent({
   components: {
     Race
   },
+
   setup() {
     const raceService = useRaceService();
+    const errorMeesage = ref(false);
     const races = ref<Array<RaceModel> | null>(null);
 
-    onMounted(async () => {
-      races.value = await raceService.list();
-    });
+    const errorToggler = () => {
+      errorMeesage.value = false;
+    };
 
-    return { races };
+    try {
+      onMounted(async () => {
+        races.value = await raceService.list();
+      });
+    } catch (error) {
+      errorMeesage.value = true;
+    }
+
+    return { races, errorMeesage, errorToggler };
   }
 });
 </script>

@@ -22,9 +22,11 @@ export default defineComponent({
 
   setup() {
     const navbarCollapse = ref(true);
-    function toggleNavbar() {
+
+    const toggleNavbar = () => {
       navbarCollapse.value = !navbarCollapse.value;
-    }
+    };
+
     return { navbarCollapse, toggleNavbar };
   }
 });
