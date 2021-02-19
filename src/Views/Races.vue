@@ -1,10 +1,8 @@
 <template>
+  <!-- Use the default variant color  -->
+  <Alert :dismissible="true"> I'm a danger alert content </Alert>
   <div v-for="race in races" :key="race.id">
     <Race :raceModel="race" />
-  </div>
-  <div v-if="errorMeesage" class="alert alert-danger">
-    An error occurred while loading.
-    <button @click="errorToggler()" type="button" class="close" aria-label="Close"><span aria-hidden="true">&#215;</span></button>
   </div>
 </template>
 
@@ -22,22 +20,17 @@ export default defineComponent({
 
   setup() {
     const raceService = useRaceService();
-    const errorMeesage = ref(false);
     const races = ref<Array<RaceModel> | null>(null);
-
-    const errorToggler = () => {
-      errorMeesage.value = false;
-    };
 
     try {
       onMounted(async () => {
         races.value = await raceService.list();
       });
     } catch (error) {
-      errorMeesage.value = true;
+      console.log(error);
     }
 
-    return { races, errorMeesage, errorToggler };
+    return { races };
   }
 });
 </script>

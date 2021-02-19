@@ -24,9 +24,9 @@ export default defineComponent({
   setup(props, { emit }) {
     const ponyImageUrl = computed(() => `/images/pony-${props.ponyModel.color.toLowerCase()}.gif`);
 
-    function clicked() {
+    const clicked = () => {
       emit('ponySelected');
-    }
+    };
 
     return { ...toRefs(props.ponyModel), ponyImageUrl, clicked };
   }
