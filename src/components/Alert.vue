@@ -1,6 +1,8 @@
 <template>
+  <!-- bind the class attr to the computed alertClasses -->
   <div :class="alertClasses">
     <slot></slot>
+    <!-- display cancel button if the canDismiss is true -->
     <button v-if="canDismiss" @click="dismiss()" type="button" class="close" aria-label="Close">
       <span aria-hidden="true">&#215;</span>
     </button>
@@ -24,8 +26,10 @@ export default defineComponent({
     }
   },
 
+  // emit dismissed
   emits: ['dismissed'],
 
+  // props as parameter to make it available in the component😊
   setup(props, { emit }) {
     const dismiss = () => {
       emit('dismissed');

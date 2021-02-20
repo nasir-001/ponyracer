@@ -20,8 +20,11 @@ export default defineComponent({
 
   async setup() {
     const raceService = useRaceService();
+    // stores Array of RaceModel or null (it's null for now)
     const races = ref<Array<RaceModel> | null>(null);
 
+    // assign the list of races that comes from the
+    // imported file to the races variable
     races.value = await raceService.list();
 
     return { races };

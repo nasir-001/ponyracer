@@ -2,7 +2,9 @@
   <Navbar></Navbar>
   <div class="container" style="margin-top: 70px">
     <h1>Ponyracer</h1>
+    <!-- alert this component if the error variable is not null -->
     <Alert v-if="error" :dismissible="true">An error occurred while loading</Alert>
+    <!-- must use Suspense because the Race component uses async setup -->
     <Suspense>
       <div>
         <Races></Races>
@@ -27,10 +29,12 @@ export default defineComponent({
   },
 
   setup() {
+    // stores string or null (it's null for now)
     const error = ref<string | null>(null);
 
+    // store errorExist to the error variable
     onErrorCaptured(() => {
-      error.value = 'text';
+      error.value = 'errorExist';
       return false;
     });
 

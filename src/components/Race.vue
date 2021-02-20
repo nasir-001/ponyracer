@@ -30,8 +30,12 @@ export default defineComponent({
   },
 
   setup(props) {
+    // format the startInstant to more readable using the fromNow function
+    // that is imported from utils directory.
     const startInstant = computed(() => fromNow(props.raceModel.startInstant));
 
+    // destructure the code so that we can write {{ name }} directly in the
+    // template instead of writting {{ props.ponyModel.name }}
     return { ...toRefs(props.raceModel), startInstant };
   }
 });

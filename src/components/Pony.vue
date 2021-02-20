@@ -22,12 +22,15 @@ export default defineComponent({
   emits: ['ponySelected'],
 
   setup(props, { emit }) {
+    // computed property that stores the pony gif image
     const ponyImageUrl = computed(() => `/images/pony-${props.ponyModel.color.toLowerCase()}.gif`);
 
     const clicked = () => {
       emit('ponySelected');
     };
 
+    // destructure the code so that we can write {{ name }} directly in the
+    // template instead of writting {{ props.ponyModel.name }}
     return { ...toRefs(props.ponyModel), ponyImageUrl, clicked };
   }
 });

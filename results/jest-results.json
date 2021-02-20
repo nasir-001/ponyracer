@@ -26,116 +26,18 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1613780281064,
+  "startTime": 1613836215901,
   "success": false,
   "testResults": [
     {
       "failureMessage": null,
       "numFailingTests": 0,
-      "numPassingTests": 3,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1613780362196,
-        "start": 1613780327183
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\components\\Alert.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Alert.vue"
-          ],
-          "duration": 150,
-          "failureMessages": [],
-          "fullName": "Alert.vue should display the alert content",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should display the alert content"
-        },
-        {
-          "ancestorTitles": [
-            "Alert.vue"
-          ],
-          "duration": 45,
-          "failureMessages": [],
-          "fullName": "Alert.vue should have the correct CSS class",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should have the correct CSS class"
-        },
-        {
-          "ancestorTitles": [
-            "Alert.vue"
-          ],
-          "duration": 25,
-          "failureMessages": [],
-          "fullName": "Alert.vue should be dismissible",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should be dismissible"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
       "numPassingTests": 1,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613780407013,
-        "start": 1613780362502
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\components\\Race.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Race.vue"
-          ],
-          "duration": 89,
-          "failureMessages": [],
-          "fullName": "Race.vue should display a race name and its ponies",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should display a race name and its ponies"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1613780407261,
-        "start": 1613780327185
+        "end": 1613836240183,
+        "start": 1613836227196
       },
       "snapshot": {
         "added": 0,
@@ -152,7 +54,7 @@
           "ancestorTitles": [
             "Races.vue"
           ],
-          "duration": 394,
+          "duration": 126,
           "failureMessages": [],
           "fullName": "Races.vue should display every race name in a title",
           "location": null,
@@ -171,8 +73,179 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613780408814,
-        "start": 1613780407316
+        "end": 1613836240213,
+        "start": 1613836227124
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\components\\Race.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Race.vue"
+          ],
+          "duration": 176,
+          "failureMessages": [],
+          "fullName": "Race.vue should display a race name and its ponies",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should display a race name and its ponies"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1613836241814,
+        "start": 1613836240808
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\components\\Alert.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Alert.vue"
+          ],
+          "duration": 59,
+          "failureMessages": [],
+          "fullName": "Alert.vue should display the alert content",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should display the alert content"
+        },
+        {
+          "ancestorTitles": [
+            "Alert.vue"
+          ],
+          "duration": 33,
+          "failureMessages": [],
+          "fullName": "Alert.vue should have the correct CSS class",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should have the correct CSS class"
+        },
+        {
+          "ancestorTitles": [
+            "Alert.vue"
+          ],
+          "duration": 32,
+          "failureMessages": [],
+          "fullName": "Alert.vue should be dismissible",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should be dismissible"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1613836240983,
+        "start": 1613836227108
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\App.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "App.vue"
+          ],
+          "duration": 127,
+          "failureMessages": [],
+          "fullName": "App.vue renders a title",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "renders a title"
+        },
+        {
+          "ancestorTitles": [
+            "App.vue"
+          ],
+          "duration": 33,
+          "failureMessages": [],
+          "fullName": "App.vue renders the navbar",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "renders the navbar"
+        },
+        {
+          "ancestorTitles": [
+            "App.vue"
+          ],
+          "duration": 112,
+          "failureMessages": [],
+          "fullName": "App.vue renders the races list inside a Suspense component",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "renders the races list inside a Suspense component"
+        },
+        {
+          "ancestorTitles": [
+            "App.vue"
+          ],
+          "duration": 26,
+          "failureMessages": [],
+          "fullName": "App.vue renders an error if races list does not load",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "renders an error if races list does not load"
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    },
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1613836242077,
+        "start": 1613836240695
       },
       "snapshot": {
         "added": 0,
@@ -189,7 +262,7 @@
           "ancestorTitles": [
             "FromNow"
           ],
-          "duration": 3,
+          "duration": 2,
           "failureMessages": [],
           "fullName": "FromNow should transform a date",
           "location": null,
@@ -208,8 +281,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613780412123,
-        "start": 1613780410912
+        "end": 1613836242800,
+        "start": 1613836242049
       },
       "snapshot": {
         "added": 0,
@@ -226,7 +299,7 @@
           "ancestorTitles": [
             "Pony.vue"
           ],
-          "duration": 25,
+          "duration": 8,
           "failureMessages": [],
           "fullName": "Pony.vue should display an image and a legend",
           "location": null,
@@ -238,7 +311,7 @@
           "ancestorTitles": [
             "Pony.vue"
           ],
-          "duration": 10,
+          "duration": 5,
           "failureMessages": [],
           "fullName": "Pony.vue should emit an event on click",
           "location": null,
@@ -257,8 +330,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1613780412597,
-        "start": 1613780410955
+        "end": 1613836242822,
+        "start": 1613836242147
       },
       "snapshot": {
         "added": 0,
@@ -275,7 +348,7 @@
           "ancestorTitles": [
             "useRaceService"
           ],
-          "duration": 9,
+          "duration": 8,
           "failureMessages": [],
           "fullName": "useRaceService should list races",
           "location": null,
@@ -286,183 +359,100 @@
       ],
       "skipped": false,
       "leaks": false
-    },
-    {
-      "failureMessage": null,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "perfStats": {
-        "end": 1613780414075,
-        "start": 1613780327183
-      },
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "unmatched": 0,
-        "updated": 0,
-        "uncheckedKeys": []
-      },
-      "testFilePath": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\tests\\unit\\App.spec.ts",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "App.vue"
-          ],
-          "duration": 89,
-          "failureMessages": [],
-          "fullName": "App.vue renders a title",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "renders a title"
-        },
-        {
-          "ancestorTitles": [
-            "App.vue"
-          ],
-          "duration": 20,
-          "failureMessages": [],
-          "fullName": "App.vue renders the navbar",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "renders the navbar"
-        },
-        {
-          "ancestorTitles": [
-            "App.vue"
-          ],
-          "duration": 3921,
-          "failureMessages": [],
-          "fullName": "App.vue renders the races list inside a Suspense component",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "renders the races list inside a Suspense component"
-        },
-        {
-          "ancestorTitles": [
-            "App.vue"
-          ],
-          "duration": 69,
-          "failureMessages": [],
-          "fullName": "App.vue renders an error if races list does not load",
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "renders an error if races list does not load"
-        }
-      ],
-      "skipped": false,
-      "leaks": false
     }
   ],
   "wasInterrupted": false,
   "coverageMap": {
-    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Alert.vue": {
-      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Alert.vue",
+    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\Views\\Races.vue": {
+      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\Views\\Races.vue",
       "statementMap": {
         "0": {
           "start": {
-            "line": 11,
+            "line": 10,
             "column": 0
           },
           "end": {
-            "line": 11,
+            "line": 10,
             "column": null
           }
         },
         "1": {
           "start": {
+            "line": 12,
+            "column": 0
+          },
+          "end": {
+            "line": 12,
+            "column": null
+          }
+        },
+        "2": {
+          "start": {
             "line": 13,
             "column": 0
           },
           "end": {
             "line": 13,
-            "column": 15
-          }
-        },
-        "2": {
-          "start": {
-            "line": 29,
-            "column": 21
-          },
-          "end": {
-            "line": 29,
-            "column": 23
+            "column": null
           }
         },
         "3": {
           "start": {
-            "line": 30,
-            "column": 20
+            "line": 15,
+            "column": 0
           },
           "end": {
-            "line": 32,
-            "column": null
+            "line": 15,
+            "column": 15
           }
         },
         "4": {
           "start": {
-            "line": 31,
-            "column": 6
+            "line": 22,
+            "column": 10
           },
           "end": {
-            "line": 31,
-            "column": 10
+            "line": 22,
+            "column": 21
           }
         },
         "5": {
           "start": {
-            "line": 34,
-            "column": 25
+            "line": 23,
+            "column": 10
           },
           "end": {
-            "line": 34,
-            "column": 34
+            "line": 23,
+            "column": 15
           }
         },
         "6": {
           "start": {
-            "line": 34,
-            "column": 40
+            "line": 25,
+            "column": 4
           },
           "end": {
-            "line": 34,
-            "column": 55
+            "line": 25,
+            "column": 10
           }
         },
         "7": {
           "start": {
-            "line": 36,
-            "column": 23
+            "line": 25,
+            "column": 18
           },
           "end": {
-            "line": 36,
-            "column": 32
+            "line": 25,
+            "column": 24
           }
         },
         "8": {
           "start": {
-            "line": 36,
-            "column": 38
-          },
-          "end": {
-            "line": 36,
-            "column": 43
-          }
-        },
-        "9": {
-          "start": {
-            "line": 38,
+            "line": 27,
             "column": 4
           },
           "end": {
-            "line": 38,
+            "line": 27,
             "column": 11
           }
         }
@@ -472,90 +462,21 @@
           "name": "(anonymous_0)",
           "decl": {
             "start": {
-              "line": 29,
-              "column": 7
+              "line": 21,
+              "column": 2
             },
             "end": {
-              "line": 29,
+              "line": 21,
               "column": 8
             }
           },
           "loc": {
             "start": {
-              "line": 29,
-              "column": 23
+              "line": 21,
+              "column": 2
             },
             "end": {
-              "line": 39,
-              "column": null
-            }
-          }
-        },
-        "1": {
-          "name": "(anonymous_1)",
-          "decl": {
-            "start": {
-              "line": 30,
-              "column": 20
-            },
-            "end": {
-              "line": 30,
-              "column": null
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 30,
-              "column": 20
-            },
-            "end": {
-              "line": 32,
-              "column": null
-            }
-          }
-        },
-        "2": {
-          "name": "(anonymous_2)",
-          "decl": {
-            "start": {
-              "line": 34,
-              "column": 34
-            },
-            "end": {
-              "line": 34,
-              "column": 40
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 34,
-              "column": 34
-            },
-            "end": {
-              "line": 34,
-              "column": null
-            }
-          }
-        },
-        "3": {
-          "name": "(anonymous_3)",
-          "decl": {
-            "start": {
-              "line": 36,
-              "column": 32
-            },
-            "end": {
-              "line": 36,
-              "column": 38
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 36,
-              "column": 32
-            },
-            "end": {
-              "line": 36,
+              "line": 28,
               "column": null
             }
           }
@@ -565,20 +486,16 @@
       "s": {
         "0": 2,
         "1": 2,
-        "2": 3,
-        "3": 3,
-        "4": 1,
+        "2": 2,
+        "3": 2,
+        "4": 3,
         "5": 3,
         "6": 4,
         "7": 3,
-        "8": 4,
-        "9": 3
+        "8": 1
       },
       "f": {
-        "0": 3,
-        "1": 1,
-        "2": 4,
-        "3": 4
+        "0": 3
       },
       "b": {}
     },
@@ -974,96 +891,106 @@
       },
       "b": {}
     },
-    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\Views\\Races.vue": {
-      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\Views\\Races.vue",
+    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Alert.vue": {
+      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\components\\Alert.vue",
       "statementMap": {
         "0": {
           "start": {
-            "line": 10,
+            "line": 11,
             "column": 0
           },
           "end": {
-            "line": 10,
+            "line": 11,
             "column": null
           }
         },
         "1": {
           "start": {
-            "line": 12,
+            "line": 13,
             "column": 0
           },
           "end": {
-            "line": 12,
-            "column": null
+            "line": 13,
+            "column": 15
           }
         },
         "2": {
           "start": {
-            "line": 13,
-            "column": 0
+            "line": 29,
+            "column": 21
           },
           "end": {
-            "line": 13,
-            "column": null
+            "line": 29,
+            "column": 23
           }
         },
         "3": {
           "start": {
-            "line": 15,
-            "column": 0
+            "line": 30,
+            "column": 20
           },
           "end": {
-            "line": 15,
-            "column": 15
+            "line": 32,
+            "column": null
           }
         },
         "4": {
           "start": {
-            "line": 22,
-            "column": 10
+            "line": 31,
+            "column": 6
           },
           "end": {
-            "line": 22,
-            "column": 21
+            "line": 31,
+            "column": 10
           }
         },
         "5": {
           "start": {
-            "line": 23,
-            "column": 10
+            "line": 34,
+            "column": 25
           },
           "end": {
-            "line": 23,
-            "column": 15
+            "line": 34,
+            "column": 34
           }
         },
         "6": {
           "start": {
-            "line": 25,
-            "column": 4
+            "line": 34,
+            "column": 40
           },
           "end": {
-            "line": 25,
-            "column": 10
+            "line": 34,
+            "column": 55
           }
         },
         "7": {
           "start": {
-            "line": 25,
-            "column": 18
+            "line": 36,
+            "column": 23
           },
           "end": {
-            "line": 25,
-            "column": 24
+            "line": 36,
+            "column": 32
           }
         },
         "8": {
           "start": {
-            "line": 27,
+            "line": 36,
+            "column": 38
+          },
+          "end": {
+            "line": 36,
+            "column": 43
+          }
+        },
+        "9": {
+          "start": {
+            "line": 38,
             "column": 4
           },
           "end": {
-            "line": 27,
+            "line": 38,
             "column": 11
           }
         }
@@ -1073,21 +1000,90 @@
           "name": "(anonymous_0)",
           "decl": {
             "start": {
-              "line": 21,
-              "column": 2
+              "line": 29,
+              "column": 7
             },
             "end": {
-              "line": 21,
+              "line": 29,
               "column": 8
             }
           },
           "loc": {
             "start": {
-              "line": 21,
-              "column": 2
+              "line": 29,
+              "column": 23
             },
             "end": {
-              "line": 28,
+              "line": 39,
+              "column": null
+            }
+          }
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": {
+            "start": {
+              "line": 30,
+              "column": 20
+            },
+            "end": {
+              "line": 30,
+              "column": null
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 30,
+              "column": 20
+            },
+            "end": {
+              "line": 32,
+              "column": null
+            }
+          }
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": {
+            "start": {
+              "line": 34,
+              "column": 34
+            },
+            "end": {
+              "line": 34,
+              "column": 40
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 34,
+              "column": 34
+            },
+            "end": {
+              "line": 34,
+              "column": null
+            }
+          }
+        },
+        "3": {
+          "name": "(anonymous_3)",
+          "decl": {
+            "start": {
+              "line": 36,
+              "column": 32
+            },
+            "end": {
+              "line": 36,
+              "column": 38
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 36,
+              "column": 32
+            },
+            "end": {
+              "line": 36,
               "column": null
             }
           }
@@ -1097,186 +1093,22 @@
       "s": {
         "0": 2,
         "1": 2,
-        "2": 2,
-        "3": 2,
-        "4": 3,
-        "5": 3,
-        "6": 4,
-        "7": 3,
-        "8": 1
-      },
-      "f": {
-        "0": 3
-      },
-      "b": {}
-    },
-    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\composables\\RaceService.ts": {
-      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\composables\\RaceService.ts",
-      "statementMap": {
-        "0": {
-          "start": {
-            "line": 2,
-            "column": 0
-          },
-          "end": {
-            "line": 2,
-            "column": 26
-          }
-        },
-        "1": {
-          "start": {
-            "line": 3,
-            "column": 16
-          },
-          "end": {
-            "line": 3,
-            "column": 51
-          }
-        },
-        "2": {
-          "start": {
-            "line": 6,
-            "column": 2
-          },
-          "end": {
-            "line": 14,
-            "column": 4
-          }
-        },
-        "3": {
-          "start": {
-            "line": 8,
-            "column": 23
-          },
-          "end": {
-            "line": 10,
-            "column": null
-          }
-        },
-        "4": {
-          "start": {
-            "line": 8,
-            "column": 12
-          },
-          "end": {
-            "line": 10,
-            "column": null
-          }
-        },
-        "5": {
-          "start": {
-            "line": 12,
-            "column": 6
-          },
-          "end": {
-            "line": 12,
-            "column": 44
-          }
-        },
-        "6": {
-          "start": {
-            "line": 5,
-            "column": 0
-          },
-          "end": {
-            "line": 5,
-            "column": 16
-          }
-        }
-      },
-      "fnMap": {
-        "0": {
-          "name": "useRaceService",
-          "decl": {
-            "start": {
-              "line": 5,
-              "column": 16
-            },
-            "end": {
-              "line": 5,
-              "column": 30
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 30
-            },
-            "end": {
-              "line": 15,
-              "column": 1
-            }
-          }
-        },
-        "1": {
-          "name": "(anonymous_1)",
-          "decl": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 7,
-              "column": 10
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 13,
-              "column": null
-            }
-          }
-        }
-      },
-      "branchMap": {
-        "0": {
-          "loc": {
-            "start": {
-              "line": 8,
-              "column": 23
-            },
-            "end": {
-              "line": 10,
-              "column": null
-            }
-          },
-          "type": "switch",
-          "locations": [
-            {
-              "start": {
-                "line": 8,
-                "column": 23
-              },
-              "end": {
-                "line": 10,
-                "column": null
-              }
-            }
-          ]
-        }
-      },
-      "s": {
-        "0": 2,
-        "1": 2,
         "2": 3,
         "3": 3,
         "4": 1,
-        "5": 1,
-        "6": 2
+        "5": 3,
+        "6": 4,
+        "7": 3,
+        "8": 4,
+        "9": 3
       },
       "f": {
         "0": 3,
-        "1": 3
+        "1": 1,
+        "2": 4,
+        "3": 4
       },
-      "b": {
-        "0": [
-          3
-        ]
-      }
+      "b": {}
     },
     "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\App.vue": {
       "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\App.vue",
@@ -1575,6 +1407,174 @@
         "1": 0
       },
       "b": {}
+    },
+    "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\composables\\RaceService.ts": {
+      "path": "C:\\Users\\Nasir\\Desktop\\Tahir\\ponyracer\\src\\composables\\RaceService.ts",
+      "statementMap": {
+        "0": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 26
+          }
+        },
+        "1": {
+          "start": {
+            "line": 3,
+            "column": 16
+          },
+          "end": {
+            "line": 3,
+            "column": 51
+          }
+        },
+        "2": {
+          "start": {
+            "line": 6,
+            "column": 2
+          },
+          "end": {
+            "line": 14,
+            "column": 4
+          }
+        },
+        "3": {
+          "start": {
+            "line": 8,
+            "column": 23
+          },
+          "end": {
+            "line": 10,
+            "column": null
+          }
+        },
+        "4": {
+          "start": {
+            "line": 8,
+            "column": 12
+          },
+          "end": {
+            "line": 10,
+            "column": null
+          }
+        },
+        "5": {
+          "start": {
+            "line": 12,
+            "column": 6
+          },
+          "end": {
+            "line": 12,
+            "column": 44
+          }
+        },
+        "6": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 16
+          }
+        }
+      },
+      "fnMap": {
+        "0": {
+          "name": "useRaceService",
+          "decl": {
+            "start": {
+              "line": 5,
+              "column": 16
+            },
+            "end": {
+              "line": 5,
+              "column": 30
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 30
+            },
+            "end": {
+              "line": 15,
+              "column": 1
+            }
+          }
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 7,
+              "column": 10
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 13,
+              "column": null
+            }
+          }
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 23
+            },
+            "end": {
+              "line": 10,
+              "column": null
+            }
+          },
+          "type": "switch",
+          "locations": [
+            {
+              "start": {
+                "line": 8,
+                "column": 23
+              },
+              "end": {
+                "line": 10,
+                "column": null
+              }
+            }
+          ]
+        }
+      },
+      "s": {
+        "0": 2,
+        "1": 2,
+        "2": 3,
+        "3": 3,
+        "4": 1,
+        "5": 1,
+        "6": 2
+      },
+      "f": {
+        "0": 3,
+        "1": 3
+      },
+      "b": {
+        "0": [
+          3
+        ]
+      }
     }
   }
 }
