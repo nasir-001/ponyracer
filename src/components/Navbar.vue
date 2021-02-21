@@ -6,8 +6,8 @@
     <button @click="toggleNavbar()" type="button" class="navbar-toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- bind the collapse class to the navbarCollapse reactive variable -->
-    <div id="navbar" class="navbar-collapse" :class="{ collapse: navbarCollapse }">
+    <!-- bind the collapse class to the navbarCollapsed reactive variable -->
+    <div id="navbar" class="navbar-collapse" :class="{ collapse: navbarCollapsed }">
       <ul class="navbar-nav">
         <li class="nav-item">
           <RouterLink class="navbar-brand text-dark" :to="{ name: 'races' }">Races</RouterLink>
@@ -24,15 +24,15 @@ export default defineComponent({
   name: 'Navbar',
 
   setup() {
-    const navbarCollapse = ref(true);
+    const navbarCollapsed = ref(true);
 
     // toggle the value navbarCollase variable
     // to the opposite of it (true or false)
     const toggleNavbar = () => {
-      navbarCollapse.value = !navbarCollapse.value;
+      navbarCollapsed.value = !navbarCollapsed.value;
     };
 
-    return { navbarCollapse, toggleNavbar };
+    return { navbarCollapsed, toggleNavbar };
   }
 });
 </script>

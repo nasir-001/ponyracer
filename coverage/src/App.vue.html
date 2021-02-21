@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -101,7 +101,8 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -109,19 +110,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,14 +118,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,36 +151,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
   &lt;Navbar&gt;&lt;/Navbar&gt;
   &lt;div class="container" style="margin-top: 70px"&gt;
-    &lt;h1&gt;Ponyracer&lt;/h1&gt;
-    &lt;Alert v-if="error" :dismissible="true"&gt;An error occurred while loading&lt;/Alert&gt;
-    &lt;Suspense&gt;
-      &lt;div&gt;
-        &lt;Races&gt;&lt;/Races&gt;
-      &lt;/div&gt;
-      &lt;template #fallback&gt;Loading...&lt;/template&gt;
-    &lt;/Suspense&gt;
+    &lt;RouterView v-slot="{ Component }"&gt;
+      &lt;!-- alert this component if the error variable is not null --&gt;
+      &lt;Alert v-if="error" :dismissible="true"&gt;An error occurred while loading&lt;/Alert&gt;
+      &lt;!-- must use Suspense because the Race component uses async setup --&gt;
+      &lt;Suspense v-else timeout="0"&gt;
+        &lt;component :is="Component" /&gt;
+        &lt;template #fallback&gt;Loading...&lt;/template&gt;
+      &lt;/Suspense&gt;
+    &lt;/RouterView&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
 import { defineComponent, onErrorCaptured, ref } from 'vue';
 import Navbar from '@/components/Navbar.vue';
-import Races from '@/Views/Races.vue';
 import Alert from '@/components/Alert.vue';
 &nbsp;
 export default defineComponent({
   name: 'App',
   components: {
     Navbar,
-    Races,
     Alert
   },
 &nbsp;
   setup() {
+    // stores string or null (it's null for now)
     const error = ref&lt;string | null&gt;(null);
 &nbsp;
+    // store errorExist to the error variable
     onErrorCaptured(() =&gt; {
-      error.value = 'text';
+      error.value = 'errorExist';
       return false;
     });
 &nbsp;
@@ -198,7 +201,7 @@ export default defineComponent({
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Feb 20 2021 16:50:52 GMT+0100 (West Africa Standard Time)
+                at Sun Feb 21 2021 06:20:20 GMT+0100 (West Africa Standard Time)
             </div>
         </div>
         <script src="..\prettify.js"></script>
