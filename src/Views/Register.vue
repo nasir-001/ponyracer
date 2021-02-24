@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Alert :dismissible="true" :variant="danger" v-if="registrationFailed" />
     <form @submit.prevent="register()" class="container">
       <div class="form-group">
         <label for="login">Login</label>
@@ -27,6 +28,8 @@ import { UserModel } from '@/models/UserModel';
 import { RegisterUserModel } from '@/models/RegisterUserModel';
 import { useUserService } from '@/composables/UserService';
 import { useRouter } from 'vue-router';
+import Alert from '@/components/Alert.vue';
+
 const userCreadentials = ref<RegisterUserModel | null>(null);
 const registrationFailed = ref<boolean>(false);
 const userService = useUserService();
@@ -34,6 +37,9 @@ const router = useRouter();
 
 export default defineComponent({
   name: 'Register',
+  components: {
+    Alert
+  },
 
   setup() {
     const date = new Date();
