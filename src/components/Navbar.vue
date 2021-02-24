@@ -25,8 +25,7 @@ export default defineComponent({
 
   setup() {
     const navbarCollapsed = ref(true);
-
-    // toggle the value navbarCollase variable
+    // toggle the value navbarCollased variable
     // to the opposite of it (true or false)
     const toggleNavbar = () => {
       navbarCollapsed.value = !navbarCollapsed.value;

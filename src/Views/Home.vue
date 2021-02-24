@@ -6,11 +6,14 @@
 
     <div>
       <!-- insert the link with the routerLink here -->
-      <div class="mt-4">
+      <div class="mt-3">
         <RouterLink class="btn btn-primary" :to="{ name: 'races' }">Races</RouterLink>
       </div>
-      <div class="mt-4">
+      <div class="mt-3">
         <RouterLink class="btn btn-primary" :to="{ name: 'home' }">Home</RouterLink>
+      </div>
+      <div class="mt-3">
+        <RouterLink class="btn btn-primary" :to="{ name: 'register' }">Register</RouterLink>
       </div>
     </div>
   </div>
