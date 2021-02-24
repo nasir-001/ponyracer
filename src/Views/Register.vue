@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Alert :dismissible="true" :variant="danger" v-if="registrationFailed" />
+    <Alert v-if="(registrationFailed = true)" :dismissible="true" :variant="danger">Invalid credentials</Alert>
     <form @submit.prevent="register()" class="container">
       <div class="form-group">
         <label for="login">Login</label>
@@ -29,11 +29,11 @@ import { RegisterUserModel } from '@/models/RegisterUserModel';
 import { useUserService } from '@/composables/UserService';
 import { useRouter } from 'vue-router';
 import Alert from '@/components/Alert.vue';
+import router from '@/router';
 
 const userCreadentials = ref<RegisterUserModel | null>(null);
 const registrationFailed = ref<boolean>(false);
 const userService = useUserService();
-const router = useRouter();
 
 export default defineComponent({
   name: 'Register',
@@ -87,7 +87,7 @@ export default defineComponent({
       try {
         userCreadentials.value = await userService.register(userModel);
         if (userCreadentials.value) {
-          router.push('home');
+          router.push({ name: 'home' });
         }
       } catch (error) {
         registrationFailed.value = true;
