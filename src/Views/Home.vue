@@ -5,7 +5,6 @@
     </div>
 
     <div>
-      <!-- insert the link with the routerLink here -->
       <div class="mt-3">
         <RouterLink class="btn btn-primary" :to="{ name: 'login' }">Login</RouterLink>
       </div>

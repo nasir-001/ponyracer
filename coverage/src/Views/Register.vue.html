@@ -138,7 +138,57 @@
 <a name='L80'></a><a href='#L80'>80</a>
 <a name='L81'></a><a href='#L81'>81</a>
 <a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -200,10 +250,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -216,15 +266,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
   &lt;div class="container"&gt;
-    &lt;Alert v-if="registrationFailed" class="mt-4" @dismissed="registrationFailed = false" dismissible&gt;Form is not valid&lt;/Alert&gt;
-    &lt;Form @submit="register($event)" v-slot="{ meta: formMeta }" :initialValue="initialValue"&gt;
-      &lt;Field name="login" rules="required" v-slot="{ field, meta }" v-model="login"&gt;
+    &lt;Alert v-if="registrationFailed" class="mt-4" @dismissed="registrationFailed = false" dismissible&gt;Try again with another login&lt;/Alert&gt;
+    &lt;Form @submit="register($event)" v-slot="{ meta: formMeta }" :initialValues="initialValue"&gt;
+      &lt;Field name="login" rules="required|min:3" v-slot="{ field, meta }" v-model="login"&gt;
         &lt;div class="form-group"&gt;
           &lt;label for="login-input" :class="{ 'text-danger': meta.dirty &amp;&amp; !meta.valid }"&gt;Login&lt;/label&gt;
           &lt;input id="login-input" class="form-control" :class="{ 'is-invalid': meta.dirty &amp;&amp; !meta.valid }" v-bind="field" /&gt;
@@ -244,7 +294,32 @@
           &lt;ErrorMessage name="password" class="invalid-feedback" /&gt;
         &lt;/div&gt;
       &lt;/Field&gt;
-      &lt;Field name="birthYear" rules="required" v-slot="{ field, meta }" v-model.number="birthYear"&gt;
+      &lt;Field
+        name="confirmPassword"
+        :label="'password confirmation'"
+        rules="required|confirmed:password"
+        v-slot="{ field, meta }"
+        v-model="confirmPassword"
+      &gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="confirmPassword-input" :class="{ 'text-danger': meta.dirty &amp;&amp; !meta.valid }"&gt;Password confirmation&lt;/label&gt;
+          &lt;input
+            id="confirmPassword-input"
+            type="password"
+            class="form-control"
+            :class="{ 'is-invalid': meta.dirty &amp;&amp; !meta.valid }"
+            v-bind="field"
+          /&gt;
+          &lt;ErrorMessage name="confirmPassword" class="invalid-feedback" /&gt;
+        &lt;/div&gt;
+      &lt;/Field&gt;
+      &lt;Field
+        name="birthYear"
+        :label="'birth year'"
+        rules="required|min_value:1900|isOldEnough"
+        v-slot="{ field, meta }"
+        v-model.number="birthYear"
+      &gt;
         &lt;div class="form-group"&gt;
           &lt;label for="birthYear-input" :class="{ 'text-danger': meta.dirty &amp;&amp; !meta.valid }"&gt;BirthYear&lt;/label&gt;
           &lt;input
@@ -282,7 +357,7 @@ export default defineComponent({
   },
 &nbsp;
   setup() {
-    const initialValue = new Date().getFullYear() - 18;
+    const initialValue = { birthYear: new Date().getFullYear() - 18 };
     const userCreadentials = ref&lt;RegisterUserModel | null&gt;(null);
     const registrationFailed = ref&lt;boolean&gt;(false);
     const userService = useUserService();
@@ -309,7 +384,7 @@ export default defineComponent({
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Feb 26 2021 19:19:31 GMT+0100 (West Africa Standard Time)
+                at Fri Feb 26 2021 22:22:37 GMT+0100 (West Africa Standard Time)
             </div>
         </div>
         <script src="..\..\prettify.js"></script>

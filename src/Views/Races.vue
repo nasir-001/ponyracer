@@ -1,6 +1,4 @@
 <template>
-  <!-- Use the default variant color  -->
-  <!-- <Alert :dismissible="true"> I'm a danger alert content </Alert> -->
   <div v-for="race in races" :key="race.id">
     <Race :raceModel="race" />
   </div>

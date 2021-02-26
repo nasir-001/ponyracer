@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <Alert v-if="registrationFailed" class="mt-4" @dismissed="registrationFailed = false" dismissible>Form is not valid</Alert>
-    <Form @submit="register($event)" v-slot="{ meta: formMeta }" :initialValue="initialValue">
-      <Field name="login" rules="required" v-slot="{ field, meta }" v-model="login">
+    <Alert v-if="registrationFailed" class="mt-4" @dismissed="registrationFailed = false" dismissible>Try again with another login</Alert>
+    <Form @submit="register($event)" v-slot="{ meta: formMeta }">
+      <Field name="login" rules="required|min:3" v-slot="{ field, meta }" v-model="login">
         <div class="form-group">
           <label for="login-input" :class="{ 'text-danger': meta.dirty && !meta.valid }">Login</label>
           <input id="login-input" class="form-control" :class="{ 'is-invalid': meta.dirty && !meta.valid }" v-bind="field" />
@@ -22,7 +22,32 @@
           <ErrorMessage name="password" class="invalid-feedback" />
         </div>
       </Field>
-      <Field name="birthYear" rules="required" v-slot="{ field, meta }" v-model.number="birthYear">
+      <Field
+        name="confirmPassword"
+        :label="'password confirmation'"
+        rules="required|confirmed:password"
+        v-slot="{ field, meta }"
+        v-model="confirmPassword"
+      >
+        <div class="form-group">
+          <label for="confirmPassword-input" :class="{ 'text-danger': meta.dirty && !meta.valid }">Password confirmation</label>
+          <input
+            id="confirmPassword-input"
+            type="password"
+            class="form-control"
+            :class="{ 'is-invalid': meta.dirty && !meta.valid }"
+            v-bind="field"
+          />
+          <ErrorMessage name="confirmPassword" class="invalid-feedback" />
+        </div>
+      </Field>
+      <Field
+        name="birthYear"
+        :label="'birth year'"
+        rules="required|min_value:1900|isOldEnough"
+        v-slot="{ field, meta }"
+        v-model.number="birthYear"
+      >
         <div class="form-group">
           <label for="birthYear-input" :class="{ 'text-danger': meta.dirty && !meta.valid }">BirthYear</label>
           <input
@@ -60,7 +85,6 @@ export default defineComponent({
   },
 
   setup() {
-    const initialValue = new Date().getFullYear() - 18;
     const userCreadentials = ref<RegisterUserModel | null>(null);
     const registrationFailed = ref<boolean>(false);
     const userService = useUserService();
@@ -76,7 +100,7 @@ export default defineComponent({
       }
     }
 
-    return { register, initialValue, registrationFailed };
+    return { register, registrationFailed };
   }
 });
 </script>
