@@ -7,10 +7,7 @@
     <div>
       <!-- insert the link with the routerLink here -->
       <div class="mt-3">
-        <RouterLink class="btn btn-primary" :to="{ name: 'races' }">Races</RouterLink>
-      </div>
-      <div class="mt-3">
-        <RouterLink class="btn btn-primary" :to="{ name: 'home' }">Home</RouterLink>
+        <RouterLink class="btn btn-primary" :to="{ name: 'login' }">Login</RouterLink>
       </div>
       <div class="mt-3">
         <RouterLink class="btn btn-primary" :to="{ name: 'register' }">Register</RouterLink>

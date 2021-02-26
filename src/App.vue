@@ -3,9 +3,11 @@
   <div class="container" style="margin-top: 70px">
     <RouterView v-slot="{ Component }">
       <!-- alert this component if the error variable is not null -->
-      <Alert v-if="error" :dismissible="true">An error occurred while loading</Alert>
+      <Alert v-if="registrationFailed" class="mt-4" @dismissed="registrationFailed = false" dismissible
+        >An error occur while Loading ...</Alert
+      >
       <!-- must use Suspense because the Race component uses async setup -->
-      <Suspense v-else timeout="0">
+      <Suspense>
         <component :is="Component" />
         <template #fallback>Loading...</template>
       </Suspense>
