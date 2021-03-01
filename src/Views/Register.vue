@@ -22,13 +22,7 @@
           <ErrorMessage name="password" class="invalid-feedback" />
         </div>
       </Field>
-      <Field
-        name="confirmPassword"
-        :label="'password confirmation'"
-        rules="required|confirmed:password"
-        v-slot="{ field, meta }"
-        v-model="confirmPassword"
-      >
+      <Field name="confirmPassword" :label="'password confirmation'" rules="required|confirmed:@password" v-slot="{ field, meta }">
         <div class="form-group">
           <label for="confirmPassword-input" :class="{ 'text-danger': meta.dirty && !meta.valid }">Password confirmation</label>
           <input
